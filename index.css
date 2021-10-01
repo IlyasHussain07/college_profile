@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #f0f0f0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Header  */
+
+.profile__name{
+    position: relative;
+    
+}
+.profile__name img {
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%,-18%);
+}
+.profile__info{
+    max-width: 800px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.info__1{
+    font-size: 50px;
+    text-shadow: 2px 2px 5px #5a3f37;
+}
+.info__2{
+    font-size: 36px;
+    text-shadow: 2px 2px 5px #5a3f37;
+}
+
+.info__3{
+    font-size: 30px;
+    text-shadow: 2px 2px 5px #5a3f37;
+}
+.info__4{
+    font-size: 25px;
+    text-shadow: 2px 2px 5px #5a3f37;
+}
+
+/* Main  */
+
+.myContainer{
+    max-width: 1000px;
+    width: 100%;
+    margin: 20px auto;
+}
+.flexbox {
+    display: flex;
+}
+.subflex {
+    display: flex;
+}
+.image__container{
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.image__container a {
+    color: #000;
+}
+.image img {
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.image img:hover {
+    transform: scale(1.1);
+}
+
+.center__video{
+    text-align: center;
+}
+
+
+
+
+/* Footer  */
+footer {
+    background: #000;
+    box-shadow: 0px -15px 10px -15px #000;
+    color: #fff;
+    text-align: center;
+}
+
+.footer__info p {
+    padding-top: 10px;
+}
+
+.footer__info{
+    margin-top: 5px;
+}
+.footer__info span {
+    margin-left: 10px;
+    background: transparent;
+}
+.footer__info a {
+    margin-left: 10px;
+    color: #fff;
+}
+.footer__info a i:hover{
+    color: #fff;
+    transform: scale(1.5);
+    box-shadow: 0px 0px 15px 10px rgb(11, 142, 218);
+}
+.fixed__img{
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    width: 100px;
+}
+
+
+@media(max-width: 768px){
+    .profile__name img {
+        width: 60px;
+        top: 5%;
+    }
+    .info__1{
+        font-size: 22px;
+    }
+    .info__2{
+        font-size: 16px;
+    }
+    .info__3{
+        font-size: 14px;
+    }
+    .info__4{
+        font-size: 12px;
+    }
+    .flexbox{
+        flex-direction: column;
+    }
+    .image img {
+        width: 130px;
+    }
+    .fixed__img{
+        width: 50px;
+    }
+    .center__video video{
+        width: 400px;
+    }
+}
